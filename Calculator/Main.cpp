@@ -1,34 +1,5 @@
 #include "Main.h"
 
-/*void calculateAdd(float numA, float numB)
-{
-	float ans;
-	ans = numA + numB;
-	cout << numA << " + " << numB << " = " << ans << endl;
-}
-
-void calculateSubtract(float numA, float numB)
-{
-	float ans;
-	ans = numA - numB;
-	cout << numA << " - " << numB << " = " << ans << endl;
-}
-
-void calculateMultiply(float numA, float numB)
-{
-	float ans;
-	ans = numA * numB;
-	cout << numA << " * " << numB << " = " << ans << endl;
-}
-
-void calculateDivide(float numA, float numB)
-{
-	float ans;
-	ans = numA / numB;
-	cout << numA << " / " << numB << " = " << ans << endl;
-}
-*/
-
 void printMainMenu(void)
 {
 	cout << "Hello User please aswer what type of calculation you require:" << endl;
@@ -67,24 +38,34 @@ void main(void)
 		case 1:
 			myCalc.GetNum();
 			myCalc.calculateAdd();
+			system("pause");
+			system("cls");
 			break;
 		case 2:
 			myCalc.GetNum();
 			myCalc.calculateSubtract();
+			system("pause");
+			system("cls");
 			break;
 		case 3:
 			myCalc.GetNum();
 			myCalc.calculateMultiply();
+			system("pause");
+			system("cls");
 			break;
 		case 4:
 			myCalc.GetNum();
 			myCalc.calculateDivide();
+			system("pause");
+			system("cls");
 			break;
 		case 5:
 			loop = false;
 			break;
 		default:
 			cout << "Error try again" << endl;
+			system("pause");
+			system("cls");
 			break;
 		}
 		//break loop code developer only comment out once done
